@@ -75,7 +75,7 @@ f5 ansible_host=34.199.128.69 ansible_user=admin private_ip=172.16.26.136 ansibl
 [control]
 ansible ansible_host=107.23.192.217 ansible_user=ec2-user private_ip=172.16.207.49
 
-[webservers]
+[web]
 host1 ansible_host=107.22.141.4 ansible_user=ec2-user private_ip=172.16.170.190
 host2 ansible_host=54.146.162.192 ansible_user=ec2-user private_ip=172.16.160.13
 ```
@@ -83,7 +83,7 @@ host2 ansible_host=54.146.162.192 ansible_user=ec2-user private_ip=172.16.160.13
 
 #### Step 5
 
-In the above output every `[ ]` defines a group. For example `[webservers]` is a group that contains the hosts `host1` and `host2`.
+In the above output every `[ ]` defines a group. For example `[web]` is a group that contains the hosts `host1` and `host2`.
 
 > Note: A group called **all** always exists and contains all groups and hosts defined within an inventory.
 
